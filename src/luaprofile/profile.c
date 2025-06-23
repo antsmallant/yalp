@@ -174,7 +174,10 @@ static inline struct profile_context *
 _get_profile(lua_State* L) {
     void *ud = NULL;
     lua_getallocf(L, &ud);
-    return ((struct snlua*)(ud))->context;
+    if (ud) {
+        return ((struct snlua*)(ud))->context;
+    }
+    return NULL;
 }
 
 static struct icallpath_context*
