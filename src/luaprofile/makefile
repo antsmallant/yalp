@@ -1,6 +1,6 @@
 # This file is modified version from https://github.com/JieTrancender/game-server/tree/main/3rd/luaprofile
 
-all: macosx
+all: linux
 
 macosx:
 	clang -undefined dynamic_lookup --shared -Wall -DUSE_RDTSC -g -O2 \
@@ -9,7 +9,7 @@ macosx:
 
 linux:
 	gcc -shared -fPIC -Wall -g -O2 -DUSE_RDTSC \
-		-I ../../3rd/lua-5.4.3/src \
+		-I ../../3rd/lua-5.4.3 \
 		-o profile.so \
 		imap.c profile.c icallpath.c
 
