@@ -1,0 +1,4 @@
+[submodule "example/skynet-with-yalp"]
+	path = example/skynet-with-yalp
+	url = git@github.com:antsmallant/skynet.git
+	branch = skynet-with-yalp
