@@ -2,3 +2,6 @@
 	path = example/skynet-with-yalp
 	url = git@github.com:antsmallant/skynet.git
 	branch = skynet-with-yalp
+[submodule "3rd/lua-5.4.3"]
+	path = 3rd/lua-5.4.3
+	url = https://github.com/antsmallant/lua-5.4.3.git
